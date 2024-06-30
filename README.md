@@ -29,3 +29,10 @@ It uses KRA, NHIF and NSSF values to calculate the payee, NHIF Deductions, Nssf 
 ## Installation.
 Use git clone to download the documents in the Github.
 
+## Livelink
+https://mburufiona.github.io/Toy-Problem/
+
+## copyright 
+Copyright (c) [2024] [Fiona Mburu]
+MIT License.
+
