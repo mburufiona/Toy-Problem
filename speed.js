@@ -50,5 +50,5 @@ function calcDemeritsPoints(speed){
         return output;
 }
 // return Demerit Points
-const points = calcDemeritsPoints(69)
+const points = calcDemeritsPoints()
 console.log(points)
