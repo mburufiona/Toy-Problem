@@ -20,7 +20,7 @@ function calcPayee(basicSalary, benefit){
         break;
         default:
     }
-
+    
 function calcNhif(basicSalary, benefit){
     let grossSalary = basicSalary + benefit;
     let nhif;
