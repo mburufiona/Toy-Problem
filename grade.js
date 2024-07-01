@@ -1,17 +1,17 @@
-let studentMarks = parseInt(x)
-if (studentMarks < 0 && studentMarks > 100)
 function inputStudentMarks(marks){
-   if (marks>79){
+   if (marks>79 && marks<100){
     console.log("A")
    } else if (marks <=79 && marks>=60){
     console.log ("B")
-   } else if (marks>50){
+   } else if (marks>=49 && marks<=59){
     console.log ("C")
-   } else if (marks>40){
+   } else if (marks>=40 && marks<=49){
     console.log ("D")
-   } else {
+   } else if (marks<=40){
     console.log ("E")
    }
-return studentMarks();
+return 'Your Grade:' +marks;
 }
-console.log(studentMarks)
+// return Grade;
+const myMarks = inputStudentMarks(179)
+console.log(myMarks)

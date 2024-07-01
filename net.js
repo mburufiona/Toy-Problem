@@ -1,26 +1,29 @@
+// calculate the payee
 function calcPayee(basicSalary, benefit){
     let grossSalary = basicSalary + benefits;
-    let paye;
+    let payee;
 
     switch (true) {
     case grossSalary <= 24000:
-        paye = (10/100)
+        payee = (10/100)
         break;
      case grossSalary > 24000 && grossSalary <= 32333:
-        paye = (25/100)
+        payee = (25/100)
         break;
     case grossSalary >= 32334 && grossSalary <= 500000:
-        paye = (30/100)
+        payee = (30/100)
         break;
     case grossSalary >= 500001 && grossSalary <= 800000:
-        paye = (32.5/100) 
+        payee = (32.5/100) 
         break;
     case grossSalary > 800000:
-        paye = (35/100) 
+        payee = (35/100) 
         break;
         default:
     }
-    
+    return payee;
+}
+    // calculate the Nhif deductions.
 function calcNhif(basicSalary, benefit){
     let grossSalary = basicSalary + benefit;
     let nhif;
@@ -80,11 +83,26 @@ function calcNhif(basicSalary, benefit){
         default:
 
     }
-
+    return nhif;
 }
+// calculate the NSSF Deduction
+const NSSF1 = 7000 * 0.06
+const NSSF2 = (36000 - 7000)*0.06  
+
+// calculate the netSalary.
+const netSalary = grossSalary - payee - Nhif - NSSF1 -NSSF2
+
+// Return 
+    console.log (netSalary)
+    console.log (grossSalary)
+    console.log (payee)
+    console.log (Nhif)
+    console.log (NSSF)
+
+
+
 
 
         
     
 
-}
