@@ -19,6 +19,7 @@ The output should correspond the correct grade ;
  #### code.
  // input studentMarks corresponding with required grade.
 function inputStudentMarks(marks){
+
    if (marks>79 && marks<100){
     console.log("A")
    } else if (marks <=79 && marks>=60){
@@ -216,7 +217,7 @@ Git
 ## Technologies Used.
 JavaScript.
 
-## support and contanct support.
+## contact support.
  https://github.com/mburufiona
 
 ## Livelink
