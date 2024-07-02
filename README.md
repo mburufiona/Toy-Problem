@@ -15,28 +15,7 @@ The output should correspond the correct grade ;
                 D - 40 to 49,
                 E - less 40.
  Using if and else if, the code is written inside the function, inputStudentMarks;
-
- #### code.
- // input studentMarks corresponding with required grade.
-function inputStudentMarks(marks){
-
-   if (marks>79 && marks<100){
-    console.log("A")
-   } else if (marks <=79 && marks>=60){
-    console.log ("B")
-   } else if (marks>=49 && marks<=59){
-    console.log ("C")
-   } else if (marks>=40 && marks<=49){
-    console.log ("D")
-   } else if (marks<=40){
-    console.log ("E")
-   }
-return 'Your Grade:' +marks
-}
-// return Grade;
-const myMarks = inputStudentMarks(20)
-console.log(myMarks)
-
+  
  
 ## SPEED DETECTOR.
 This program takes the speed of a car as input and if the speed is less than 70 which is the speed limit, it prints "Ok".
