@@ -14,5 +14,5 @@ function inputStudentMarks(marks){
 return 'Your Grade:' +marks
 }
 // return Grade;
-const myMarks = inputStudentMarks(20)
+const myMarks = inputStudentMarks()
 console.log(myMarks)
