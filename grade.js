@@ -1,3 +1,4 @@
+// input studentMarks corresponding with required grade.
 function inputStudentMarks(marks){
    if (marks>79 && marks<100){
     console.log("A")
@@ -10,8 +11,8 @@ function inputStudentMarks(marks){
    } else if (marks<=40){
     console.log ("E")
    }
-return 'Your Grade:' +marks;
+return 'Your Grade:' +marks
 }
 // return Grade;
-const myMarks = inputStudentMarks()
+const myMarks = inputStudentMarks(20)
 console.log(myMarks)

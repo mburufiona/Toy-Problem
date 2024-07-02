@@ -91,16 +91,10 @@ const NSSF2 = (36000 - 7000)*0.06
 
 // calculate the netSalary.
 const netSalary = grossSalary - (payee + nhif + NSSF1 + NSSF2)
+ 
 
-
-// Return 
-    console.log (netSalary)
-    console.log (grossSalary)
-    console.log (payee)
-    console.log (nhif)
-    console.log (NSSF)
-
-
+console.log(netSalary)
+    
 
 
 

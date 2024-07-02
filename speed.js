@@ -1,6 +1,8 @@
-function calcDemeritsPoints(speed){
 
 // Calculate Demerit Points.
+function calcDemeritsPoints(speed){
+
+
     switch(true){
         case speed < 70:
             output = "Ok";
@@ -50,5 +52,5 @@ function calcDemeritsPoints(speed){
         return output;
 }
 // return Demerit Points
-const points = calcDemeritsPoints()
+const points = calcDemeritsPoints(2000)
 console.log(points)

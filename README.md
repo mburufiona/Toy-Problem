@@ -16,8 +16,9 @@ The output should correspond the correct grade ;
                 E - less 40.
  Using if and else if, the code is written inside the function, inputStudentMarks;
 
- #### code
-        function inputStudentMarks(marks){
+ #### code.
+ // input studentMarks corresponding with required grade.
+function inputStudentMarks(marks){
    if (marks>79 && marks<100){
     console.log("A")
    } else if (marks <=79 && marks>=60){
@@ -29,13 +30,13 @@ The output should correspond the correct grade ;
    } else if (marks<=40){
     console.log ("E")
    }
-return 'Your Grade:' +marks;
+return 'Your Grade:' +marks
 }
 // return Grade;
-const myMarks = inputStudentMarks()
+const myMarks = inputStudentMarks(20)
 console.log(myMarks)
 
-
+ 
 ## SPEED DETECTOR.
 This program takes the speed of a car as input and if the speed is less than 70 which is the speed limit, it prints "Ok".
 However, for every 5 km/s above the speed limit which is 70, it gives the driver one demerit point and prints the total number of demerit points.
@@ -44,9 +45,10 @@ The code is using switch case to determine and calculate the points and correspo
     The code is inside the function calcDemeritsPoints as shown below;
 
 #### code
-    function calcDemeritsPoints(speed){
-
 // Calculate Demerit Points.
+function calcDemeritsPoints(speed){
+
+
     switch(true){
         case speed < 70:
             output = "Ok";
@@ -96,8 +98,9 @@ The code is using switch case to determine and calculate the points and correspo
         return output;
 }
 // return Demerit Points
-const points = calcDemeritsPoints()
+const points = calcDemeritsPoints(2000)
 console.log(points)
+
 
 ## NET SALARY CALCULATOR.
 This programs calculates an individual's Net Salary by getting the inputs of basic salary and benefits.
@@ -203,11 +206,7 @@ const netSalary = grossSalary - (payee + nhif + NSSF1 + NSSF2)
 
 // Return 
     console.log (netSalary)
-    console.log (grossSalary)
-    console.log (payee)
-    console.log (nhif)
-    console.log (NSSF)
-
+ 
 ## Installation.
 Use git clone to download the documents in the Github.
 
