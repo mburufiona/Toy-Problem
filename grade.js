@@ -1,18 +1,22 @@
 // input studentMarks corresponding with required grade.
-function inputStudentMarks(marks){
-   if (marks>79 && marks<100){
-    console.log("A")
-   } else if (marks <=79 && marks>=60){
-    console.log ("B")
-   } else if (marks>=49 && marks<=59){
-    console.log ("C")
-   } else if (marks>=40 && marks<=49){
-    console.log ("D")
-   } else if (marks<=40){
-    console.log ("E")
+function inputStudentGrade(){
+   const marks = parseInt(prompt("Enter Student Marks:"));
+   if (marks < 0 || marks > 100 || isNaN(marks) ) {
+      console.log("Invalid")
+   } else {
+   let grade;
+   if (marks > 79) {
+      grade = 'A';
+   } else if (marks >= 60 && marks <= 79) {
+      grade = 'B';
+   } else if (marks >= 49 && marks <= 59) {
+      grade = 'C';
+   } else if (marks >= 40 && marks <= 48) {
+      grade = 'D';
+   } else {
+      grade = 'E';
    }
-return 'Your Grade:' +marks
+   console.log(`Grade: ${grade}`)
+   }
 }
-// return Grade;
-const myMarks = inputStudentMarks()
-console.log(myMarks)
+inputStudentGrade()

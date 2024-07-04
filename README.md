@@ -15,7 +15,7 @@ The output should correspond the correct grade ;
                 D - 40 to 49,
                 E - less 40.
  Using if and else if, the code is written inside the function, inputStudentMarks;
-  
+
  
 ## SPEED DETECTOR.
 This program takes the speed of a car as input and if the speed is less than 70 which is the speed limit, it prints "Ok".
