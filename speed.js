@@ -53,6 +53,6 @@ function calcDemeritsPoints() {
     return output;
 }
 
-// Example usage:
+
 const points = calcDemeritsPoints();
 console.log(points);  // Outputs the appropriate message based on the speed entered
